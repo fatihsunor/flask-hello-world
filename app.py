@@ -9,4 +9,4 @@ def hello_world():
     time = request.args.get('time')
      
     # Greet Hello to name provided in the URL Parameter
-    return "Your order is placed!\nRestaurant:".format(restaurant)
+    return "Your order is placed!\nRestaurant:{}".format(restaurant)
