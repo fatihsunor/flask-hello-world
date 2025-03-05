@@ -8,5 +8,5 @@ def hello_world():
     menu_item = request.args.get('menu_item')
     time = request.args.get('time')
     
-    respond = "Your order is placed! \\n Restaurant:" + " " + restaurant + " " + "\\n Food:" + " " + food
+    respond = "Your order is placed! \\n Restaurant:" + " " + restaurant + " " + "\\n Food:" + " " + menu_item
     return respond
