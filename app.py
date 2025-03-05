@@ -8,7 +8,5 @@ def hello_world():
     menu_item = request.args.get('menu_item')
     time = request.args.get('time')
     
-    d = { 'restaurant': restaurant, 'menu_item': menu_item, 'time': time }
-    respond = "Your order is placed! \n Restaurant: {restaurant}"
-    respond.format(**d)
+    respond = "Your order is placed! \n Restaurant: " + restaurant
     return respond
