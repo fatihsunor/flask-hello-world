@@ -7,10 +7,8 @@ def hello_world():
     restaurant = request.args.get('restaurant')
     menu_item = request.args.get('menu_item')
     time = request.args.get('time')
-     
-    # Greet Hello to name provided in the URL Parameter
-    respond = 'Your order is placed!' + 
-            'Restaurant:' + restaurant
-            'Food:' + menu_item
-            'Time:' + time
+    
+    d = { 'restaurant': restaurant, 'menu_item': menu_item, 'time': time }
+    s = "Your order is placed! \n Restaurant: $restaurant"
+    s.format(**d)
     return respond
